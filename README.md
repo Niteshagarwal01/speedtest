@@ -1,5 +1,8 @@
 # Typing Speed Test — Project Guide (Small Build #12)
 
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/5f8461fa-ddb6-4171-aa41-41df281f4352" />
+
+
 A professional typing speed test application featuring real-time WPM tracking, accuracy calculation, and dynamic difficulty levels. Built with vanilla JavaScript and sleek black & white premium design for an elegant user experience.
 
 ## 🚀 Features
