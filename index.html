@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="typing-test">
+            <h1>⌨️ Typing Speed Test</h1>
+            <p class="subtitle">Test your typing speed and accuracy!</p>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-value" id="timer">60</div>
+                    <div class="stat-label">Seconds</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="wpm">0</div>
+                    <div class="stat-label">WPM</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="accuracy">100</div>
+                    <div class="stat-label">Accuracy %</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="errors">0</div>
+                    <div class="stat-label">Errors</div>
+                </div>
+            </div>
+
+            <div class="difficulty-selector">
+                <label>Difficulty:</label>
+                <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+                <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+            </div>
+
+            <div class="text-display" id="textDisplay">
+                <span class="text-to-type" id="textToType"></span>
+            </div>
+
+            <textarea 
+                id="userInput" 
+                class="input-area" 
+                placeholder="Click here and start typing when ready..."
+                disabled
+            ></textarea>
+
+            <div class="button-container">
+                <button id="startBtn" class="btn btn-primary">Start Test</button>
+                <button id="resetBtn" class="btn btn-secondary" style="display: none;">Try Again</button>
+            </div>
+
+            <div class="result-modal" id="resultModal">
+                <div class="modal-content">
+                    <h2>🎉 Test Complete!</h2>
+                    <div class="result-stats">
+                        <div class="result-item">
+                            <span class="result-label">Words Per Minute:</span>
+                            <span class="result-value" id="finalWpm">0</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Accuracy:</span>
+                            <span class="result-value" id="finalAccuracy">0%</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Total Errors:</span>
+                            <span class="result-value" id="finalErrors">0</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Characters Typed:</span>
+                            <span class="result-value" id="finalChars">0</span>
+                        </div>
+                    </div>
+                    <div class="performance-message" id="performanceMessage"></div>
+                    <button id="closeModal" class="btn btn-primary">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
